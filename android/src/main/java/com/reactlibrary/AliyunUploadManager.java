@@ -118,7 +118,7 @@ public class AliyunUploadManager {
                 Log.d("PutObject", "UploadSuccess");
                 Log.d("ETag", result.getETag());
                 Log.d("RequestId", result.getRequestId());
-                promise.resolve("UploadSuccess");
+                promise.resolve("UploadSuccess|"+"ETag:"+result.getETag());
             }
 
             @Override
